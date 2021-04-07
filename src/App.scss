@@ -1,0 +1,47 @@
+@import './Style/_variables.scss';
+@import './Style/_card.scss';
+@import './Style/_bootstrapMod.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $inconsolata ;
+  width:100%;
+  min-height: 100vh;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+
+section {
+  padding-top:60px;
+  scroll-snap-align: start;
+  min-height:100vh;
+  width: 100vw;
+}
+
+@media (max-width: 576px) {
+  .navbar-collapse {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    padding-left:0;
+    margin-left:0;
+  }
+  .section{
+    padding-top: 60px;
+  }
+}
+
+// section {
+//   scroll-snap-align: center;
+//   height: 100vh;
+//   padding-top: 50px;
+// }
