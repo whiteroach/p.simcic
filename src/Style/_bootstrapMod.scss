@@ -9,10 +9,11 @@ $primary: green;
 
 
 .navbar {
-  position: fixed !important;
+ 
   width: 100vw;
   top:0;
-  background-color: transparent;
+  // background-color: transparent;
+  padding:0;
 }
 
 .navbar-nav{

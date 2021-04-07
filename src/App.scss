@@ -11,6 +11,7 @@ body {
   font-family: $inconsolata ;
   width:100%;
   min-height: 100vh;
+  // overflow-x: hidden;
 }
 
 html {
@@ -22,12 +23,47 @@ html {
 
 section {
   padding-top:60px;
-  scroll-snap-align: start;
+  scroll-snap-align:start;
   min-height:100vh;
   width: 100vw;
 }
-
+//CONTACT
+#contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contactForm {
+    width: 33vw;
+    height:66vh;
+    border:black 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+}
 @media (max-width: 576px) {
+  #projects{
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 0;
+    .project-container{
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    .project {
+      width: 75vw !important;
+      margin-left:0;
+      padding-right:0;
+      padding-left:0;
+
+    }
+  }
+  .navbar-nav { margin-left:0.9rem;}
+  .navbar-nav a{
+    padding: 0  !important;
+    justify-content: center !important;
+  }
   .navbar-collapse {
     text-align: center;
     font-size: 1.5rem;
@@ -38,6 +74,10 @@ section {
   .section{
     padding-top: 60px;
   }
+  .contactForm{
+    width: 75vw !important;
+  }
+ 
 }
 
 // section {

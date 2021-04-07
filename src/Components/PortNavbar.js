@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import {Navbar, Nav} from 'react-bootstrap'
 import {
   Link,
@@ -11,7 +11,9 @@ import {
 
 
 const PortNavbar = () => {
- 
+
+    const [NavbarBg, setNavBg] = useState(true)
+
     const scrollOnTop = () => {
       scroll.scrollToTop();
     };
@@ -20,19 +22,25 @@ const PortNavbar = () => {
       // document.querySelector('#basic-navbar-nav').classList.add('fade')
       document.querySelector('#basic-navbar-nav').classList.remove('show')
     }
-    // const changeNavBgColor = () => {
-    //   if(window.scrollY > 56){
-    //     //if context dark backgroundColor dark etc.
-    //   }
-    // }
+    const changeNav = () => {
+      if(window.pageYOffset > 56){
+        setNavBg(false)
+      }else{setNavBg(true)}
+    }
+  //  window.onScroll(changeNavBgColor)
+  useEffect(()=>{
+    console.log('top changed!')
+    changeNav()
+  })
+  window.addEventListener('scroll', changeNav)
     return (
        <>
-       <Navbar expand="md" fixed = 'top'>
- <span onClick={scrollOnTop}>p.simcic</span>
+       <Navbar expand="md" fixed = 'top' onScroll={(e)=>{console.log(window.pageYOffset)}} style={{backgroundColor:NavbarBg?'transparent':'blue'}}>
+  <span onClick={scrollOnTop}>p.simcic</span>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-    <Nav className="mr-auto">
+  <Navbar.Collapse id="basic-navbar-nav" >
+    <Nav>
+    <Nav>
           <Nav.Link> 
           <Link
               activeClass="active"

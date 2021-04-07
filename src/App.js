@@ -3,16 +3,23 @@ import Navbar from './Components/PortNavbar';
 import Home from './Components/Home';
 import About from './Components/About';
 import Projects from './Components/Projects';
-import Contact from './Components/Contact'
+import Contact from './Components/Contact';
+import {DesignContext, DesignProvider} from './Context/Context'
 function App() {
+ 
+  
   return (
-    <div className="App">
+    <DesignProvider>
+
+    <div className="App" >
     <Navbar/>
     <Home/>
-    <About />
+    <About/>
     <Projects/>
     <Contact/>
     </div>
+
+    </DesignProvider>
   );
 }
 
