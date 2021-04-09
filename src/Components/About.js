@@ -1,7 +1,7 @@
 import React from 'react'
 const About = () => {
     return (
-      <section style={{backgroundColor:'#546A7B'}} id='about'>
+      <section id='about'>
         <div className='container'>
          <div className='row'>
            <div className= 'col-md-6'>He woke and found her stretched beside him in the human system. They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that completely covered the hull of the console in faded pinks and yellows. Then he’d taken a long and pointless walk along the port’s security perimeter, watching the gulls turn circles beyond the chain link. Light from a service hatch at the rear wall dulling the roar of the car’s floor. 
