@@ -9,7 +9,12 @@ const ThemeButton = () => {
       }
     return (
         <div>
-             <button onClick={changeTheme}>{theme.isLight?'Dark':'Light'}</button>
+             <button onClick={changeTheme}>{theme.isLight?<span class="material-icons">
+toggle_on
+</span>:<span class="material-icons">
+toggle_off
+</span>}</button>
+             {/* <button onClick={changeTheme}>{theme.isLight?'Dark':'Light'}</button> */}
         </div>
     )
 }

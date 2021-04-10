@@ -30,10 +30,11 @@ const PortNavbar = () => {
   window.addEventListener('scroll', changeNav)
   return (
 
-    <Navbar expand="md" fixed='top' style={{ backgroundColor: NavbarBg ? 'transparent' : 'inherit' }}>
+    <Navbar expand="md" fixed='top' style={{ backgroundColor: NavbarBg ? 'transparent' : 'inherit',color:'inherit'}}>
       <span onClick={scrollOnTop}>p.simcic</span>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav" >
+      <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
+      
+      <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
           <Nav>
             <Nav.Link>
