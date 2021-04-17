@@ -26,8 +26,8 @@ const Card = () => {
                         </p>
                    </div>
                    <div className= 'project-links'>
-                    <span><a href='https://github.com/whiteroach' target='_blank'><i class="fab fa-github-square"></i></a></span>
-                    <span><a href='' target='_blank'><i class="fas fa-globe"></i></a></span>
+                    <span><a href='https://github.com/whiteroach' target='_blank' rel = 'noreferrer'><i class="fab fa-github-square"></i></a></span>
+                    <span><a href='' target='_blank' rel = 'noreferrer'><i class="fas fa-globe"></i></a></span>
                     <span class="material-icons" style={{fontSize:'40px'}}>preview</span>
                    </div>
                </div>

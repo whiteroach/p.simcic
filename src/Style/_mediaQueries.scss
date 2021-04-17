@@ -1,0 +1,110 @@
+
+@media (max-width: 576px) {
+    
+    #projects{
+      justify-content: center !important;
+      align-items: center !important;
+      margin-left: 0;
+      .project-container{
+        justify-content: center !important;
+        align-items: center !important;
+      }
+      .project {
+        width: 75vw !important;
+        margin-left:0;
+        padding-right:0;
+        padding-left:0;
+  
+      }
+    }
+    .navbar-nav { margin-left:0.9rem;}
+    .navbar-nav a{
+      padding: 0  !important;
+      justify-content: center !important;
+      color: inherit;
+    }
+    .navbar-collapse {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: 5rem;
+      padding-left:0;
+      margin-left:0;
+      height: 100vh;
+    }
+    .section{
+      padding-top: 60px;
+    }
+    .contactForm{
+      width: 75vw !important;
+    }
+  
+
+   
+  }
+//<576
+// @include media-breakpoint-up(sm) { ... }
+//>576
+@media (width: 768px){
+    .project{
+        height:35vh !important;
+        color:red;
+    }
+}
+@media (width: 800px){
+    .project{
+        height:28vh !important;
+        color:red;
+    }
+}
+@include media-breakpoint-up(md) { 
+    
+    //project
+    .project{
+        height:55vh;
+        color:orange;
+    }
+    #contact {
+        justify-content: center;
+        align-items: center;
+        span h3{
+           width: 100vh;
+        }
+        .contactForm{
+          margin-top: auto;
+          height:60vh !important;
+          width:49.5vw !important;
+        }
+      }  
+}
+// >992
+@include media-breakpoint-up(lg) { 
+    
+    #contact {
+        justify-content: center;
+        align-items: center;
+        .contactForm{
+          margin-top: auto;
+          height:45vh;
+          width:33vw !important;
+          color:blue;
+        }
+        footer{
+            margin-bottom: 3rem;
+        }
+      }  
+}
+//>1200
+@include media-breakpoint-up(xl) {
+    #contact {
+        justify-content: center;
+        align-items: center;
+        .contactForm{
+          margin-top: auto;
+          height:45vh;
+          width:66vw;
+          margin: transparent;
+        }
+      }
+ }
+//>1400
+// @include media-breakpoint-up(xxl) { ... }

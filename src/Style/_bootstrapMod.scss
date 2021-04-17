@@ -19,8 +19,8 @@ $primary: green;
 .navbar-nav{
   width: 100vw !important;
   justify-content:flex-end;
-  padding-right:5.5rem;
-& a{padding-left:10rem}
+  padding-right:5rem;
+  & a{padding-left:3rem}
 }
 
 .navbar-collapse {
@@ -34,7 +34,14 @@ $primary: green;
 }
 .navbar-toggler { border-color: transparent !important;
 }
-
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: 50% / 100% 100% no-repeat;
+}
 
 
 

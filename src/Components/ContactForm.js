@@ -21,8 +21,8 @@ const ContactForm = () => {
 }
 
     return (
-        <div className="contactForm">
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="contactForm pt-4 mb-3">
+        <form onSubmit={handleSubmit(onSubmit)}className='pt-3 pb-3'>
             <label for='name'>Full Name: </label><br/>
             <input name="name" {...register('name', {required:true, maxLength: {value:20, message: 'You exceed the amount of characters'}})} /><br/>{errors.name && errors.name.message}<br/>
             <label for='email'>Your Email: </label><br/>

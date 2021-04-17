@@ -32,13 +32,18 @@ const PortNavbar = () => {
 
     <Navbar expand="md" fixed='top' style={{ backgroundColor: NavbarBg ? 'transparent' : 'inherit',color:'inherit'}}>
       <span onClick={scrollOnTop}>p.simcic</span>
-      <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
+      <Navbar.Toggle style = {{color:'inherit'}}aria-controls="basic-navbar-nav">
+        <span class="material-icons">menu</span>
+        {/* <div class="close-icon py-1">✖</div> */}
+      </Navbar.Toggle>
+      
       
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
           <Nav>
-            <Nav.Link>
+            <Nav.Link style={{color:'inherit'}}>
               <Link
+                
                 activeClass="active"
                 to="about"
                 exact="true"
@@ -51,7 +56,7 @@ const PortNavbar = () => {
                 About
             </Link>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link style={{color:'inherit'}}>
               <Link
                 activeClass="active"
                 to="projects"
@@ -64,7 +69,7 @@ const PortNavbar = () => {
                 Projects
             </Link>
             </Nav.Link>
-            <Nav.Link> <Link
+            <Nav.Link style={{color:'inherit'}}> <Link
               activeClass="active"
               to="contact"
               spy={true}

@@ -1,7 +1,8 @@
 @import './Style/_variables.scss';
 @import './Style/_card.scss';
 @import './Style/_bootstrapMod.scss';
-
+@import './Style/_footer.scss';
+@import './Style/_mediaQueries.scss';
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +10,8 @@
 }
 body {
   font-family: $main-font ;
-  width:100%;
+  width: 100% ;
+  // width:100%;
   min-height: 100vh;
   // overflow-x: hidden;
 }
@@ -44,6 +46,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  span h3{
+    width: 100vw;
+    padding-left:5rem;
+  }
   .contactForm {
     width: 33vw;
     height:66vh;
@@ -51,49 +57,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
   
-  }
 }
-@media (max-width: 576px) {
-  #projects{
-    justify-content: center !important;
-    align-items: center !important;
-    margin-left: 0;
-    .project-container{
-      justify-content: center !important;
-      align-items: center !important;
-    }
-    .project {
-      width: 75vw !important;
-      margin-left:0;
-      padding-right:0;
-      padding-left:0;
 
-    }
-  }
-  .navbar-nav { margin-left:0.9rem;}
-  .navbar-nav a{
-    padding: 0  !important;
-    justify-content: center !important;
-  }
-  .navbar-collapse {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 5rem;
-    padding-left:0;
-    margin-left:0;
-  }
-  .section{
-    padding-top: 60px;
-  }
-  .contactForm{
-    width: 75vw !important;
-  }
- 
-}
 
 // section {
 //   scroll-snap-align: center;
 //   height: 100vh;
 //   padding-top: 50px;
 // }
+
