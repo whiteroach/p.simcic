@@ -29,7 +29,16 @@ section {
   min-height:100vh;
   width: 100vw;
 }
+
+#basic-navbar-nav::before{
+  background-color:white;
+}
 //THEME
+.theme-button{
+  border:none;
+  color:inherit;
+  background-color: inherit;
+}
 .dark{
   background-color: #333;
   color:#f3f3f3 !important;
@@ -46,17 +55,73 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  color:inherit;
   span h3{
     width: 100vw;
     padding-left:5rem;
   }
   .contactForm {
-    width: 33vw;
+    width: 48vw;
     height:66vh;
-    border:black 1px solid;
+    // border:black 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:inherit;
+
+    input {
+      min-width: 30vw;
+      border-top: none;
+      border-bottom: 1px solid;
+      border-right: none;
+      border-left: none;
+      padding-bottom:5px;
+      background-color: inherit;
+      color: inherit;
+      &:focus{
+        outline: 0px;
+      }
+      &::placeholder{
+        // color:#111;
+        padding-bottom: 3px;
+        color: inherit;
+      }
+    }
+    
+      textarea{
+      resize:none; 
+      height:150px; 
+      // overflow:auto;
+      min-width: 30vw;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid;
+      background-color: inherit;
+      color:inherit;
+      &:focus{
+        outline: 0px;
+      }
+
+      &::placeholder{
+        color:inherit;
+        padding-bottom: 3px;
+        
+      }
+    }
+    button{
+      border:1px solid;
+      color: inherit;
+      background-color: inherit;
+      margin-left: auto;
+      font-size: 14px;
+      padding:3px;
+      float:right;
+    }
+
+    small{
+      color:$danger;
+    }
   }
   
 }

@@ -1,5 +1,5 @@
 
-@media (max-width: 576px) {
+@media (max-width: 763px) {
     
     #projects{
       justify-content: center !important;
@@ -42,7 +42,13 @@
    
   }
 //<576
-// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(sm) { 
+// //   .project{
+// //     height:50vh !important;
+// //     width:50vw !important;
+// //     color:red;
+// // }
+// //  }
 //>576
 @media (width: 768px){
     .project{
@@ -71,8 +77,6 @@
         }
         .contactForm{
           margin-top: auto;
-          height:60vh !important;
-          width:49.5vw !important;
         }
       }  
 }
@@ -82,11 +86,12 @@
     #contact {
         justify-content: center;
         align-items: center;
+        color:inherit;
         .contactForm{
           margin-top: auto;
           height:45vh;
           width:33vw !important;
-          color:blue;
+          color:inherit;
         }
         footer{
             margin-bottom: 3rem;

@@ -5,7 +5,7 @@ const Projects = () => {
     return (
         <section id='projects'>
             <div className='container'>
-                <span className='mb-3'><h3 className='mb-5'>projects</h3></span>
+                <span className='mb-3'><h3 className='mb-5'>Projects</h3></span>
                 <div className='d-flex row project-container'>
                     <Card/>
                     <Card/>

@@ -23,12 +23,11 @@ const ContactForm = () => {
     return (
         <div className="contactForm pt-4 mb-3">
         <form onSubmit={handleSubmit(onSubmit)}className='pt-3 pb-3'>
-            <label for='name'>Full Name: </label><br/>
-            <input name="name" {...register('name', {required:true, maxLength: {value:20, message: 'You exceed the amount of characters'}})} /><br/>{errors.name && errors.name.message}<br/>
-            <label for='email'>Your Email: </label><br/>
-            <input name="=email" {...register('email', {required:true, pattern:{ value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i , message:"Invalid email address"}})} /><br/>{errors.email && errors.email.message}<br/>
-            <label for='comment'>Your Message: </label><br/>
-            <textarea name="comment" {...register('comment', {required:true})} /><br/>{errors.comment && "Please leave a comment"}<br/>
+            
+            <input name="name" {...register('name', {required:true, maxLength: {value:20, message: 'You exceed the amount of characters'}})} placeholder='Full Name'/><br/><small>{errors.name && errors.name.message}</small><br/>
+            <input name="email" {...register('email', {required:true, pattern:{ value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i , message:"Invalid email address"}})} placeholder='Email'/><br/><small>{errors.email && errors.email.message}</small><br/>
+            
+            <textarea name="comment" {...register('comment', {required:true})} placeholder='Leave a Message'/><br/><small>{errors.comment && "Please leave a comment"}</small><br/>
             <button type="submit" >Submit</button>
         </form>
     </div>

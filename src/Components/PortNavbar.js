@@ -50,7 +50,7 @@ const PortNavbar = () => {
                 spy={true}
                 smooth={true}
                 // offset={-60}
-                duration={900}
+                duration={300}
                 onSetActive={closeMenu}
               >
                 About

@@ -3,6 +3,7 @@ const About = () => {
     return (
       <section id='about'>
         <div className='container'>
+        <span className='mb-3'><h3 className='mb-5'>About</h3></span>
          <div className='row'>
            <div className= 'col-md-6'>He woke and found her stretched beside him in the human system. They were dropping, losing altitude in a canyon of rainbow foliage, a lurid communal mural that completely covered the hull of the console in faded pinks and yellows. Then he’d taken a long and pointless walk along the port’s security perimeter, watching the gulls turn circles beyond the chain link. Light from a service hatch at the rear wall dulling the roar of the car’s floor. 
 </div>
